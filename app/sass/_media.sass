@@ -1,0 +1,249 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	header nav
+		visibility: hidden
+		position: fixed
+		top: 0
+		right: -400px
+		width: 80%
+		max-width: 400px
+		height: 100%
+		background: #000
+		z-index: 100000000000000
+		overflow-y: scroll
+		padding: 0 15px
+		transition: .5s all ease
+		&.open-menu
+			right: 0
+			visibility: visible
+			background: #367d92
+		ul
+			display: block
+			li
+				display: block
+				a
+					padding: 20px
+	header
+		.col-xs-7
+			text-align: right
+	.toggle-menu, .close
+		display: block
+		color: #fff
+		font-size: 40px
+		display: inline-block
+		line-height: 97px
+	section,
+	header:after,
+	footer:before,
+	footer:after
+		background-size: cover !important
+	#sec6
+		padding-top: 244px
+		padding-bottom: 110px
+	header:after
+		height: 90%
+	#sec3
+		padding-top: 126px
+		margin-top: -126px
+	#sec3 .container
+		padding-bottom: 60px
+	#sec5
+		padding-top: 220px
+		margin-top: -220px
+	.title-sec
+		font-size: 26px
+	label
+		font-size: 14px
+		padding: 10px
+	#sec5 .bl-dos .inner
+		padding-bottom: 0
+	footer .title-sec
+		margin-top: 120px
+	footer 
+		font-size: 16px
+		margin-top: -60px
+	#sec7 
+		z-index: 1000
+		position: relative
+	footer .prava
+		text-align: right
+		padding-right: 15px
+		bottom: 15px
+
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.toggle-menu, .close
+		line-height: 1.4
+	#sec5 
+		padding-bottom: 0
+	#sec5 .bl-dos
+		width: 100%
+		font-size: 14px
+		margin-top: 20px
+		margin-bottom: 100px
+	#sec5 .bl-dos.bl-dos-blue .title
+		font-size: 16px
+	#sec5 .bl-dos.bl-dos-blue table
+		font-size: 14px
+	#sec5 .bl-dos.bl-dos-blue
+		margin-left: 0
+	#sec5 .bl-dos .inner
+		padding: 10px 15px !important
+	#sec6
+		padding-bottom: 80px
+		.vopros
+			text-align: center
+			font-size: 18px
+			margin-bottom: 10px
+	#sec7
+		text-align: center
+		.bl
+			width: 49%
+	footer .bl-cont
+		width: 100%
+	footer .title-sec
+		margin-top: 30px
+	footer .bl-cont #map
+		height: 500px
+	#sec2 .bl
+		width: 49%
+		margin-bottom: 30px
+	#sec3
+		.container
+			background-image: none
+	header:after 
+		content: none !important
+	header h1
+		font-size: 30px
+		margin-top: 40px
+	.title-sec
+		font-size: 17px
+	footer
+		margin-top: 0
+	footer:before
+		height: 70px
+		#map
+			height: 300px
+	#sec5
+		padding-top: 300px
+	#sec4 .row-sec .bl
+		width: 50%
+	#sec5
+		.row-sec	
+			.bl-dos
+				&:before
+					height: 60px
+					top: -60px	
+				&:after		
+					height: 60px
+					bottom: -60px
+	footer .bl-cont:last-child
+		padding: 50px 15px 0
+	.logo
+		&.logo-fixed
+			height: 60px !important
+	/**/
+
+@media only screen and (max-width : 678px)
+	footer .prava
+		bottom: 50px
+		text-align: center
+		color: $grey
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	#sec5
+		.row-sec	
+			.bl-dos
+				&:before
+					height: 50px
+					top: -50px	
+				&:after		
+					height: 50px
+					bottom: -50px
+	form
+		.desc-form
+			text-align: center
+	header h1
+		text-align: center
+	#sec5
+		.title-sec
+			span
+				display: block
+			&:before
+				position: absolute
+				left: -20px
+				top: 50%
+				margin-top: -18px
+			&:after
+				position: absolute
+				right: -20px
+				top: 50%
+				margin-top: -18px
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1700px)
+	#sec5
+		.row-sec	
+			.bl-dos
+				&:before
+					height: 70px
+					top: -70px	
+				&:after		
+					height: 70px
+					bottom: -70px
+
+@media only screen and (min-width : 2200px)
+	#sec5
+		.row-sec	
+			.bl-dos
+				&:before
+					height: 60px
+					top: -60px	
+				&:after		
+					height: 60px
+					bottom: -60px
+				
+	/**/
+

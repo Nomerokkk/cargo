@@ -1,0 +1,489 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+%trans
+	transition: .5s all ease
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Exo 2', sans-serif !important
+	overflow-x: hidden
+	opacity: 1
+	color: $grey
+
+ul
+	margin: 0
+	padding: 0
+li
+	list-style-type: none
+a
+	color: inherit
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.header-relative
+	position: relative
+	height: 124px
+.wrapper-header
+	@extend %trans
+	z-index: 100000000
+	background: rgba(0,0,0,0)
+	width: 100%
+	&.fixed
+		position: fixed
+		background: rgba(0,0,0,.5)
+		nav li a
+			padding: 20px 
+
+header
+	background-size: cover
+	background-position: top center
+	background-image: url(../img/bg-home.jpg)
+	color: #fff
+	position: relative
+	&:after
+		content: ""
+		background-image: url(../img/head-ar.png)
+		background-size: 100% 100%
+		height: 50%
+		width: 100%
+		position: absolute
+		bottom: 0
+		right: 0
+	.logo
+		height: 126px
+		@extend %trans
+		img
+			height: 100%
+			width: auto
+			max-width: inherit;
+			@extend %trans
+		&.logo-fixed
+			height: 65px
+	ul
+		display: table
+		width: 100%
+		li
+			display: table-cell
+			text-align: center
+			a
+				display: block
+				padding: 40px 20px
+				color: #fff !important
+				font-size: 16px
+	h1
+		font-size: 48px
+		font-weight: bold
+		max-width: 600px
+		margin-top: 75px
+	form
+		margin-top: 15%
+		max-width: 740px
+		width: 100%
+		z-index: 100
+		position: relative
+		margin-bottom: 30px
+		overflow: hidden
+		input
+			width: 100%
+form
+	.col-sm-4
+		padding: 0 5px
+	.desc-form
+		text-align: right
+		font-size: 18px
+		font-weight: bold
+		margin-bottom: 20px
+		max-width: 370px
+		margin-left: auto
+	p
+		position: relative
+		margin: 10px 0
+	input
+		width: 100%
+		color: $grey
+		&:focus,
+		&:valid
+			+ label
+				display: none
+
+	label
+		position: absolute
+		color: $grey
+		width: 100%
+		display: block
+		top: 0
+		left: 0
+		pointer-events: none
+	input[type="submit"]
+		text-transform: uppercase
+		font-size: 16px
+		background: #009e52
+		color: #fff
+		font-weight: bold
+		@extend %trans
+		&:hover
+			background: #04713d
+.more
+	text-transform: uppercase
+	font-size: 16px
+	background: #009e52
+	color: #fff
+	@extend %trans
+	inline-block
+	padding: 10px 20px
+	&:hover
+		background: #04713d
+		color: #fff
+		text-decoration: none
+
+input, label
+	font-size: 16px
+	padding: 8px 10px
+	border: none
+	height: 40px
+	span
+		color: #ec3232
+.img-blue
+	background-color: $blue
+	position: relative
+	text-align: center
+	padding: 20px 0
+	&:before
+		content: ""
+		width: 40px
+		height: 40px
+		background: #fff
+		position: absolute
+		transform: rotate(45deg)
+		margin-left: -20px
+		margin-top: -20px
+		top: 0
+		left: 0
+	&:after
+		content: ""
+		width: 40px
+		height: 40px
+		background: #fff
+		position: absolute
+		transform: rotate(45deg)
+		margin-right: -20px
+		margin-bottom: -20px
+		bottom: 0
+		right: 0
+	img
+		height: 78px
+		width: auto
+img
+	max-width: 100%
+#sec2
+	text-align: center
+.bl
+	width: 19%
+	text-align: center
+	font-size: 18px
+	display: inline-block
+	vertical-align: top
+	.img-blue
+		margin-bottom: 20px
+		width: 127px
+		display: inline-block
+		img
+			
+
+.title-sec
+	position: relative
+	font-size: 30px
+	font-weight: 500
+	text-align: center
+	margin: 65px 0
+	&:after, &:before
+		content: url(../img/title-sec.png)
+		vertical-align: middle
+		display: inline-block
+		margin: 0 20px
+
+section
+	position: relative
+	background-size: 100% 100%
+#sec3
+	background-image: url(../img/bg-sec3.png)
+	padding-top: 70px
+	padding-bottom: 20px
+	margin-bottom: -65px
+	.container
+		background-image: url(../img/car.png)
+		background-repeat: no-repeat
+		background-position: 80% 120px
+		background-size: 400px
+		padding-bottom: 150px
+	.list-row
+		font-size: 18px
+		margin-bottom: 5px
+		span
+			font-size: 30px
+			color: #fff
+			display: inline-block
+			vertical-align: middle
+			background: url(../img/list-l.png)
+			width: 46px
+			height: 50px
+			text-align: center
+			padding: 2px 0
+			margin-right: 10px
+	center
+		margin-top: 70px
+
+#sec4
+	.row-sec
+		text-align: center
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: center
+		.bl
+			padding: 0 15px
+			margin-bottom: 60px
+			width: 20%
+			@extend %trans
+			img
+				height: auto
+				width: auto
+				filter: grayscale(100%)
+				@extend %trans
+			&:hover
+				img
+					filter: grayscale(0)
+
+#sec5
+	background-image: url(../img/bg-sec5.png)
+	color: #fff
+	padding-top: 120px
+	padding-bottom: 200px
+	background-size: 100% 100%
+	background-origin: top center
+	z-index: 1
+	margin-top: -80px
+	.row-sec
+		padding: 60px 0 100px
+	.title-sec
+		margin-bottom: 0
+		position: relative
+	.bl-dos
+		width: 50%
+		color: $grey
+		font-size: 18px
+		float: left
+		position: relative
+		margin-top: 90px
+		position: relative
+		&:before
+			background-image: url(../img/bg-dos-before.png)
+			position: absolute
+			width: 100%
+			height: 80px
+			background-size: 100% 100%
+			content: ""
+			top: -80px
+			left: 0
+		&:after
+			background-image: url(../img/bg-dos-after.png)
+			position: absolute
+			width: 100%
+			height: 80px
+			background-size: 100% 100%
+			content: ""
+			bottom: -80px
+			left: 0
+		.inner
+			padding: 5px 40px 45px
+			background-color: #f3f3f3
+			overflow: hidden
+		ul
+			li
+				float: left
+				width: 40%
+				font-weight: 500
+				&:before
+					content: "-"
+		&.bl-dos-blue
+			color: #fff
+			font-size: 14px
+			margin-left: -30px
+			z-index: 10
+			margin-top: 0
+			text-align: center
+			&:before
+				background-image:  url(../img/bg-dos-blue-before.png)
+			&:after
+				background-image:  url(../img/bg-dos-blue-after.png)
+			.inner
+				background-color: $blue
+				padding: 5px 40px
+			table
+				font-size: 16px
+				width: 100%
+				tr:first-child
+					font-weight: bold
+				td
+					padding: 5px
+			.title
+				font-size: 18px
+				text-align: left
+				margin-bottom: 10px
+			.desc
+				margin-top: 10px
+
+#sec6
+	background-image: url(../img/form-bg.png)
+	padding-top: 220px
+	padding-bottom: 220px
+	margin-top: -220px
+	color: #fff
+	margin-bottom: -65px
+	.vopros
+		font-size: 24px
+		font-weight: bold
+		line-height: 1
+.container
+	width: 100% !important
+	max-width: 1170px !important
+
+#sec7
+	.bl
+		width: 33%
+		margin-bottom: 60px
+
+footer
+	overflow: hidden
+	background-color: #f3f3f3
+	font-size: 18px
+	color: $grey
+	position: relative
+	top: -60px
+	&:before
+		content: ""
+		height: 200px
+		width: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-image: url(../img/footer-sec-before.png)
+		z-index: 100
+		background-size: 100% 100%
+	&:after
+		background-image: url(../img/footer-sec-after.png)
+		content: ""
+		height: 200px
+		width: 100%
+		position: absolute
+		bottom: 0
+		right: 0
+		z-index: 100
+		background-size: 100% 100%
+	.bl-cont
+		width: 50%
+		float: left
+		position: relative
+		z-index: 19
+		a
+			color: $grey
+		span
+			font-size: 30px
+			color: $blue
+			display: inline-block
+			vertical-align: middle
+			width: 40px
+		&:last-child
+			padding: 50px 60px 0
+		#map
+			height: 850px
+			width: 100%
+		.soc
+			margin-top: 50px
+			padding-bottom: 180px
+			li
+				float: left
+				margin-right: 10px
+				a
+					display: flex
+					width: 40px
+					height: auto
+					background: $blue
+					color: #fff
+					font-size: 30px
+					text-align: center
+					line-height: 1
+					justify-content: center
+					align-items: center
+					height: 40px
+					text-decoration: none
+					&:hover
+						background: #009e52
+	.prava
+		text-align: center
+		position: absolute
+		bottom: 25px
+		text-align: center
+		color: #fff
+		width: 100%
+		z-index: 1000
+		font-size: 16px
+
+.toggle-menu, .close
+	display: none
+.overlay
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,.5)
+	z-index: 1000
+	display: none
+
+
+@import "media" // Всегда в конце
